@@ -42,6 +42,12 @@ public class ReservationDemo {
         System.out.println("Reserva 2 creada:");
         System.out.println(reserva2);
 
-        
+        // Modificación de atributos
+        System.out.println("\n>>> Actualizando reserva 2.");
+        reserva2.setNumberOfNights(7);
+        reserva2.setPricePerNigth(89.99);
+
+        System.out.println("Reserva 2 actualizada:");
+        System.out.println(reserva2);
     }
 }
