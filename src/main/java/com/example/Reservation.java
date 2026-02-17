@@ -130,7 +130,28 @@ public void setPricePerNigth(double pricePerNight){
     }
 }
 
+//==================- METODOS ADICIONALES -=================
 
+/**
+ * Calcula el costo total de la reserva
+ * @return Costo total (Noches x precio por noche)
+ */
+public double calculateTotalCost() {
+return numberOfNights * pricePerNight;
+}
+
+/**
+ * Devuelve una representación en testo de la reserva
+ * @return String con toda la información de la reserva 
+ */
+@Override
+public String toString(){
+    return "Reserva [ID: " + reservationId +
+    ", Huesped: " + guestName +
+    ", Tipo Habitación: " + roomType +
+    ", Noches: " + numberOfNights +
+    ", Total: $" + calculateTotalCost() + "["; 
+}
 }
 
 
