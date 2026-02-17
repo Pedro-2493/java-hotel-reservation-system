@@ -113,7 +113,7 @@ public class ReservationDemo {
         System.out.println(reserva2);
 
         double totalIngresos = reserva1.calculateTotalCost() + reserva2.calculateTotalCost();
-        System.out.println("\n Total de ingresos por ambas reservas: $" + totalIngresos);
+        System.out.println("\n Total de ingresos por ambas reservas: $" + totalIngresos); 
 }
 
 
