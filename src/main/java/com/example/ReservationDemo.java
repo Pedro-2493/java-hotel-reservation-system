@@ -69,5 +69,54 @@ public class ReservationDemo {
         System.out.println("Numero de noches: " + reserva2.getNumberOfNights());
         System.out.println("Precio por noche: $" + reserva2.getPricePerNight());
         System.out.println("Costo total: $" + reserva2.calculateTotalCost());
-    }
+
+    
+        System.out.println("Reserva 2 creada:");
+        System.out.println(reserva2);
+
+        // Modificación de atributos
+        System.out.println("\n>>> Actualizando reserva 2.");
+        reserva2.setNumberOfNights(7);
+        reserva2.setPricePerNight(89.99);
+
+        System.out.println("Reserva 2 actualizada:");
+        System.out.println(reserva2);
+
+
+        System.out.println("\n\nDETALLES USANDO GETTERS\n");
+
+        System.out.println("--- Información de reserva 1 ---");
+        System.out.println("ID reserva: " + reserva1.getReservationId());
+        System.out.println("Nombre del huesped: " + reserva1.getGuestName());
+        System.out.println("Tipo de habitación: " + reserva1.getRoomType());
+        System.out.println("Numero de noches: " + reserva1.getNumberOfNights());
+        System.out.println("Precio por noche: $" + reserva1.getPricePerNight());
+        System.out.println("Costo total: $" + reserva1.calculateTotalCost());
+
+
+        System.out.println("\n\n---PROBANDO VALIDACIONES---\n");
+
+        System.out.println(">>> Intentando establecer numero de noches negativo.");
+        reserva1.setNumberOfNights(-2);
+        
+        System.out.println("\n>>> Intentando establecer precio negativo.");
+        reserva2.setPricePerNight(-50.00);
+
+        System.out.println("\n>>> Estableciendo valores validos.");
+        reserva1.setNumberOfNights(4);
+        reserva2.setPricePerNight(120.00);
+        System.out.println("Valores actualizados correctamente.");
+
+        System.out.println("======-- RESUMEN FINAL --======");
+
+        System.out.println(reserva1);
+        System.out.println(reserva2);
+
+        double totalIngresos = reserva1.calculateTotalCost() + reserva2.calculateTotalCost();
+        System.out.println("\n Total de ingresos por ambas reservas: $" + totalIngresos);
 }
+
+
+
+
+    }
