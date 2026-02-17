@@ -44,5 +44,93 @@ public Reservation(String reservationId, String guestName, String roomType, int 
     this.pricePerNight = pricePerNight;
 }
 
+//==================- GETTERS -=================
+
+/**
+ * Obtiene el Id de la reserva
+ * @return Código unico de la reserva
+ */
+public String getReservationId(){
+    return reservationId;
+}
+
+/**
+ * Obtiene el nombre del huesped
+ * @return Nombre completo del huesped
+ */
+public String guestName (){
+    return guestName;
+}
+
+/**
+ * Obtiene el tipo de habitación 
+ * @return Cantidad de noches de la reserva
+ */
+public int getNumberOfNights(){
+    return numberOfNights;
+}
+
+/**
+ * Obtiene el precio por noche
+ * @return Precio por noche en Dolares
+ */
+public double getPricePerNight(){
+    return pricePerNight;
+}
+
+//==================- SETTERS -=================
+
+/**
+ * Establece el ID de la reserva
+ * @param reservationId Nuevo codigo de reserva
+ */
+public void setReservationId(String reservationId){
+    this.reservationId = reservationId;
+}
+
+/**
+ * establece el nombre del huesped
+ * @param guestName Nuevo nombre del huesped
+ */
+public void setGuestName(String guestName){
+    this.guestName = guestName;
+}
+
+/**
+ * Establece el tipo de ahabitación
+ * @param roomType Nuevo tipo de habitación
+ */
+public void setRoomType(String roomType){
+    this.roomType = roomType;
+}
+
+/**
+ * Establece el numero de noches 
+ * Establece que el numero sea positivo
+ * @param numberOfNights Nueva cantidad de noches
+ */
+public void setNumberOfNights(int numberOfNights){
+    if(numberOfNights > 0){
+        this.numberOfNights = numberOfNights;
+    } else {
+        System.out.println("El número de noches debe ser mayor a 0(cero)");
+    }
+}
+
+/**
+ * Establece el precio por noche
+ * Valida que el precio no sea negativo
+ * @param pricePerNight Nuevo precio por noche
+ */
+public void setPricePerNigth(double pricePerNight){
+    if(pricePerNight >= 0){
+        this.pricePerNight = pricePerNight;
+    } else {
+        System.out.println("Ingrese un numero valido, el numero no puede ser negativo.");
+    }
+}
+
 
 }
+
+
