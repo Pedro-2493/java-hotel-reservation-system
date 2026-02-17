@@ -58,7 +58,7 @@ public String getReservationId(){
  * Obtiene el nombre del huesped
  * @return Nombre completo del huesped
  */
-public String guestName (){
+public String getGuestName (){
     return guestName;
 }
 
