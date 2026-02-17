@@ -64,6 +64,14 @@ public String guestName (){
 
 /**
  * Obtiene el tipo de habitación 
+ * @return _tipo de habitación reservada.
+ */
+public String getRoomType(){
+    return roomType;
+}
+
+/**
+ * Obtiene el numero de noches
  * @return Cantidad de noches de la reserva
  */
 public int getNumberOfNights(){
@@ -122,7 +130,7 @@ public void setNumberOfNights(int numberOfNights){
  * Valida que el precio no sea negativo
  * @param pricePerNight Nuevo precio por noche
  */
-public void setPricePerNigth(double pricePerNight){
+public void setPricePerNight(double pricePerNight){
     if(pricePerNight >= 0){
         this.pricePerNight = pricePerNight;
     } else {
