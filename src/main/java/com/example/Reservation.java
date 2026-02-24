@@ -7,7 +7,7 @@ package com.example;
  * @author Pedro Luis Zamora Martinez
  * @version 1.0
  */
-public class Product {
+public class Reservation {
 private String reservationId;
 private String guestName;
 private String roomType;
@@ -18,7 +18,7 @@ private double pricePerNight;
  * Constructor por defecto
  * Inicializa todos los atributos con valores predeterminados
  */
-public Product(){
+public Reservation(){
     this.reservationId = null;
     this.guestName = null;
     this.roomType = null;
@@ -36,7 +36,7 @@ public Product(){
  * @param numberOfNights Número de noches de estadia
  * @param pricePerNight Precio por noche en dolares
  */
-public Product(String reservationId, String guestName, String roomType, int numberOfNights, double pricePerNight){
+public Reservation(String reservationId, String guestName, String roomType, int numberOfNights, double pricePerNight){
     this.reservationId = reservationId;
     this.guestName = guestName;
     this.roomType = roomType;
@@ -149,7 +149,7 @@ return numberOfNights * pricePerNight;
 }
 
 /**
- * Devuelve una representación en testo de la reserva
+ * Devuelve una representación en texto de la reserva
  * @return String con toda la información de la reserva 
  */
 @Override
@@ -158,8 +158,10 @@ public String toString(){
     ", Huesped: " + guestName +
     ", Tipo Habitación: " + roomType +
     ", Noches: " + numberOfNights +
-    ", Total: $" + calculateTotalCost() + "["; 
+    ", Precio/Noche: $" + pricePerNight +
+    ", Total: $" + calculateTotalCost() + "]"; 
 }
+
 }
 
 
