@@ -7,7 +7,7 @@ package com.example;
  * @author Pedro Luis Zamora Martinez
  * @version 1.0
  */
-public class Reservation {
+public class Product {
 private String reservationId;
 private String guestName;
 private String roomType;
@@ -18,7 +18,7 @@ private double pricePerNight;
  * Constructor por defecto
  * Inicializa todos los atributos con valores predeterminados
  */
-public Reservation(){
+public Product(){
     this.reservationId = null;
     this.guestName = null;
     this.roomType = null;
@@ -36,7 +36,7 @@ public Reservation(){
  * @param numberOfNights Número de noches de estadia
  * @param pricePerNight Precio por noche en dolares
  */
-public Reservation(String reservationId, String guestName, String roomType, int numberOfNights, double pricePerNight){
+public Product(String reservationId, String guestName, String roomType, int numberOfNights, double pricePerNight){
     this.reservationId = reservationId;
     this.guestName = guestName;
     this.roomType = roomType;

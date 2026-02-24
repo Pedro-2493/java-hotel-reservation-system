@@ -13,7 +13,7 @@ public class Main {
 
         //Reserva 1: Constructor por defecto.
         System.out.println(">>> Creando Reserva 1 con constructor por defecto.\n");
-        Reservation reserva1 = new Reservation();
+        Product reserva1 = new Product();
 
         System.out.println("Estado inicial:");
         System.out.println(reserva1);
@@ -31,7 +31,7 @@ public class Main {
 
         // Reserva 2: Constructor parametrizado.
         System.out.println("\n\n>>> Creando Reserva con constructor parametrizado.\n");
-        Reservation reserva2 = new Reservation(
+        Product reserva2 = new Product(
                 "R002",
                 "Carolina Ramirez",
                 "Gabitacion Doble",
