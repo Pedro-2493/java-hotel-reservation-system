@@ -7,7 +7,7 @@ package com.example;
  * @author Pedro Luis Zamora Martinez
  * @version 1.0
  */
-public class ReservationDemo {
+public class Main {
     public static void main(String[] args) {
         System.out.println("=========---SISTEMA DE RESERVAS - HOTEL PARADISE");
 
